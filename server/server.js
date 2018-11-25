@@ -9,7 +9,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.use(require('./routes/usuario'));
+//config goblal 
+app.use(require('./routes/index'));
 //mongoose.set('useCreateIndex',true);
 mongoose.connect(process.env.URLDB , {useNewUrlParser: true}, (err, res )=>{
 //si logra abrir la coneccion callback

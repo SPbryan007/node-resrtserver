@@ -24,6 +24,24 @@ if(process.env.NODE_ENV === 'dev'){
 
 process.env.URLDB = urlDB;
 
+//******************************
+//Vencimiento del token
+//******************************
+//60 seconds
+//60 minutes
+// 24 hours
+//60 days
+process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+
+//******************************
+//SEED(SEMILLA) de autenticacion
+//******************************
+process.env.SEED = process.env.SEED || 'este-es-el-seed-desarrollo';
+
+
+
+
+
 
 //Environmental Variables with Node js
 //https://gist.github.com/romelgomez/3c1776fab4192c7687883c1a2b972c8c
